@@ -1,0 +1,10 @@
+/* pages/home/home.wxss */
+page {
+  height: 100%;
+}
+.home-page {
+  height: 160rpx;
+  width: 100%;
+  border: 1rpx solid red;
+  font-size: 60rpx;
+}

@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/blog/blog",
+    "pages/companyQualification/companyQualification",
+    "pages/companyQualification1/companyQualification1"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#353535",
+    "navigationBarTitleText": "未来以来",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#373737",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "空间",
+        "iconPath": "/images/icon/tab_home.png",
+        "selectedIconPath": "/images/icon/tab_home_filled.png"
+      },
+      {
+        "pagePath": "pages/blog/blog",
+        "text": "博客",
+        "iconPath": "/images/icon/tab_user.png",
+        "selectedIconPath": "/images/icon/tab_user_filled.png"
+      }
+    ]
+  }
+}

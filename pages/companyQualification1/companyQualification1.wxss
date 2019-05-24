@@ -1,0 +1,100 @@
+/* pages/companyQualification/companyQualification.wxss */
+page {
+  height: 100%;
+}
+.main {
+  height: 100%;
+  background-color: #F6F6F7;
+  border-top: 1px solid #F6F6F7;
+}
+.form {
+  height: 100%;
+}
+
+/* 通用必填标签 */
+.tag {
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  color:rgb(255, 255, 255);
+}
+.must {
+  color: #EA0909;
+}
+
+/* 通用占位符样式 */
+.placeholderStyle {
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: normal;
+}
+
+
+/* 通用表单验证单元格 */
+
+.section {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 90rpx;
+  color: #1A1A1A;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #F6F6F7;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  flex-wrap: wrap;
+  line-height: 90rpx;
+}
+
+.section_title {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+
+.section_input {
+  flex: 1;
+  font-size: 32rpx;
+  z-index: 10;
+}
+
+.section_textarea {
+  line-height: 28rpx;
+  width: 100%;
+  padding: 0 38rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  min-height: 80rpx;
+  margin-bottom: 34rpx;
+}
+
+.section_counter {
+  position: absolute;
+  bottom: 10rpx;
+  right: 20rpx;
+  color: #999999;
+  font-size: 26rpx;
+  height: 26rpx;
+  line-height: 26rpx;
+}
+
+/* 遮罩 */
+.mask {
+  padding-top:90rpx;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 11;
+}
+.searchResult {
+  padding:  12rpx 38rpx 12rpx;
+}
+.searchList {
+  font-size: 28rpx;
+  line-height: 28rpx;
+  height: 28rpx;
+  padding: 21rpx 0;
+}

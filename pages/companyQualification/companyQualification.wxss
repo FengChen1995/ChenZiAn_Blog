@@ -1,0 +1,157 @@
+/* pages/companyQualification/companyQualification.wxss */
+
+page {
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  border-top: 1px solid #f6f6f7;
+}
+
+form {
+  height: 100%;
+}
+
+/* 通用标识符样式 */
+
+.tag {
+  color: rgb(255, 255, 255);
+  padding-left: 20rpx;
+  font-size: 32rpx;
+}
+
+.must {
+  color: #ea0909;
+}
+
+/* 通用模块样式 */
+
+.section {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 90rpx;
+  color: #1a1a1a;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #f6f6f7;
+  font-family: PingFang-SC-Medium;
+  font-weight: 500;
+  flex-wrap: wrap;
+  line-height: 90rpx;
+}
+
+.section_title {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+
+.section_input {
+  flex: 1;
+}
+
+
+.section_right_arrows {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 1px 1px 0 0;
+  border-color: #1A1A1A;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 24rpx;
+}
+
+.section_check {
+  padding-left: 8rpx;
+  padding-bottom: 2rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section_check_box {
+  padding: 6rpx 16rpx;
+  height: 54rpx;
+  margin-left: 30rpx;
+  margin-bottom: 28rpx;
+  border: 1px solid #AAAAAA;
+  box-sizing: border-box;
+  border-radius: 27rpx;
+  font-size: 28rpx;
+  color: #1A1A1A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checked {
+  color: #84C225;
+  border-color: #84C225;
+}
+.section_check_box checkbox {
+  display: none;
+}
+
+
+/* 上传图片选择器 */
+
+.upload_box {
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+.upload_img {
+  width: 124rpx;
+  height: 124rpx;
+  margin-left: 40rpx;
+  box-sizing: border-box;
+  border: 1px dashed #999;
+  border-radius: 10rpx;
+  position: relative;
+}
+.upload_img::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 74rpx;
+  margin-left: -37rpx;
+  margin-top: -4rpx;
+  border-top: 8rpx solid #999;
+}
+.upload_img::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 74rpx;
+  margin-left: -4rpx;
+  margin-top: -37rpx;
+  border-left: 8rpx solid #999;
+}
+
+/* 通用占位符样式/提示样式 */
+
+.placeholderStyle {
+  font-size: 28rpx;
+  color: #999;
+  font-weight: normal;
+}
+
+/* 表单验证按钮 */
+
+.btn_submit {
+  background-color: #84C225;
+  height: 98rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 36rpx;
+}

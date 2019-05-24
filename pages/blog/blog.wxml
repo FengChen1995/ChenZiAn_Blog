@@ -1,0 +1,28 @@
+<!--pages/blog/blog.wxml-->
+<view class='wrap' style='padding-top:{{height+90}}rpx'>
+  <!-- 1.0 顶部导航栏 -->
+  <view class='top-wrap' style='height:{{height+90}}rpx'>
+    <view class='wrap-header'>
+      <view class='today-date'>
+        <text class='date'>24</text>
+        <text class='month-year'>May.2019</text>
+      </view>
+      <view class='wrap-title'>By ChenZiAn</view>
+    </view>
+  </view>
+
+  <!-- 2.0 咨询讯息块 -->
+  <view class='message'>
+    <image mode='aspectFill' src="http://ps07w6ria.bkt.clouddn.com/markus-spiske-1581260-unsplash.jpg?imageView2/0/w/750" class='message-image' />
+    <text class='image-form'>摄影 | Markus Spiske</text>
+    <view class='message-con'>
+      <text class='message-text'>生活不能等待别人来安排,要自己去争取和奋斗;而不论其结果是喜是悲,但可以慰藉的是,你总不枉在这世界上活了一场.</text>
+    </view>
+    <text class='author'>路遥</text>
+  </view>
+
+
+</view>
+
+
+

@@ -1,0 +1,71 @@
+<!-- 公司资质信息 -->
+<view class='main'>
+  <form class='form' bindsubmit="submitForm">
+
+    <!-- 公司LOGO -->
+    <view class="section" >
+      <view class='tag'>*</view>
+      <view class="section_title">上传公司LOGO: </view>
+      <view class='placeholderStyle tips'>（1张图片）</view>
+      <view class='upload_box'>
+        <view class='upload_img' bindtap='uploadImg'></view>
+      </view>
+      <view class=''></view>
+    </view>
+
+    <!-- 品牌LOGO -->
+    <view class="section" >
+      <view class='tag'>*</view>
+      <view class="section_title">上传品牌LOGO: </view>
+      <view class='placeholderStyle'>（1~20张图片）</view>
+      <view class='section_right_arrows'></view>
+    </view>
+
+    <!-- 企业类型 -->
+    <view class="section" >
+      <view class='must tag'>*</view>
+      <view class="section_title">企业类型（多选）: </view>
+      <checkbox-group name="qualificationCheckbox" class='section_check' >
+
+        <label class="section_check_box {{item.checked?'checked':''}}" wx:for="{{typeOfEnterprise}}" data-index="{{index}}" wx:key="item.name" bindtap='checkbox'>
+          <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+        </label>
+
+      </checkbox-group>
+    </view>
+
+    <!-- 企业资质 -->
+    <view class="section" >
+      <view class='must tag'>*</view>
+      <view class="section_title">企业资质: </view>
+      <radio-group name="qualificationRadio" class='section_radiobox'>
+
+        <label class="section_radio" wx:for="{{companyQualification}}" data-index="{{index}}" wx:key="item.name" >
+          <radio value="{{item.value}}" checked=""/>{{item.name}}
+        </label>
+
+      </radio-group>
+    </view>
+
+
+    <!-- 资质编号 -->
+    <view class="section" >
+      <view class='must tag'>*</view>
+      <view class="section_title">资质编号: </view>
+      <input class="section_input" maxlength="30" name="qualificationNum" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <!-- 上传资质文件 -->
+    <view class="section" >
+      <view class='tag'>*</view>
+      <view class="section_title">上传资质文件: </view>
+      <view class='placeholderStyle tips'>（1~2张图片）</view>
+      <view class='upload_box'>
+        <view class='upload_img'></view>
+      </view>
+    </view>
+
+    <button form-type='submit' class='btn_submit'>保存</button>
+  </form>
+</view>
+

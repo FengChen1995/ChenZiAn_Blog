@@ -1,0 +1,126 @@
+<!--pages/companyQualification/companyQualification.wxml-->
+<view class='main'>
+  <form class='form'>
+
+    <view class="section" style='z-index: 12'>
+      <view class='must tag'>*</view>
+      <view class="section_title">公司名称（中文）: </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="搜索公司名称" />
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">公司名称（英文）: </view>
+      <input class="section_input" name="input" bindinput='' placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">公司楣板名称（中文）: </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">公司楣板名称（英文）: </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">政府展团名称（中文）: </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="搜索政府展团名称" />
+    </view>
+
+    <view class="section" style='margin-top:20rpx;'>
+      <view class='must tag'>*</view>
+      <view class="section_title">经营范围（中文）: </view>
+      <textarea class='section_textarea' maxlength='150' auto-height="{{true}}" placeholder-class="placeholderStyle" placeholder="请填写经营范围" focus="{{focus}}" />
+      <text class='section_counter'>0/150</text>
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">经营范围（英文）: </view>
+      <textarea class='section_textarea' maxlength='150' auto-height="{{true}}" placeholder-class="placeholderStyle" placeholder="请填写经营范围" focus="{{focus}}" />
+      <text class='section_counter'>0/150</text>
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">品牌名称 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">来自 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="国家、省、市" />
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">公司地址 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">公司网址 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">公司联系电话 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">公司联系传真 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">是否是代理商 : </view>
+      <radio-group class="radio-group" bindchange="radioChange">
+        <label class="radio" >
+          <radio value='1' checked="" /> 是
+        </label>
+        <label class="radio" >
+          <radio value="0" checked="" /> 否
+        </label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">代理品牌名称 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class="section">
+      <view class='must tag'>*</view>
+      <view class="section_title">代理品牌来自 : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="国家、省、市" />
+    </view>
+
+    <view class="section">
+      <view class='tag'>*</view>
+      <view class="section_title">上传代理品牌LOGO : </view>
+      <input class="section_input" name="input" placeholder-class="placeholderStyle" placeholder="请填写" />
+    </view>
+
+    <view class='mask' hidden='{{!isSearch}}'>
+      <view class='searchResult'>
+        <block wx:for="{{searchResult}}">
+          <view class='searchList'>{{item.name}}</view>
+        </block>
+      </view>
+    </view>
+
+  </form>
+</view>
