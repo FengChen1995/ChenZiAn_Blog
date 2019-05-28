@@ -1,4 +1,3 @@
-
 const formatTime = date => {
   const year = date.getFullYear()
   const month = date.getMonth() + 1
@@ -56,7 +55,7 @@ const formatTimeDate = function timeFormat(timestamp) {
     case 2:
       month = "Feb";
       break;
-    case 3 :
+    case 3:
       month = "Mar";
       break;
     case 4:
@@ -86,7 +85,7 @@ const formatTimeDate = function timeFormat(timestamp) {
     case 12:
       month = "Dec";
       break;
-  } 
+  }
   var date = time.getDate();
   var hours = time.getHours();
   var minutes = time.getMinutes();
@@ -104,6 +103,50 @@ const formatTimeThree = function timeFormat(timestamp) {
   var seconds = time.getSeconds();
   return year + '-' + add0(month) + '-' + add0(date) + ' ' + add0(hours) + ':' + add0(minutes) + ':' + add0(seconds);
 }
+
+const getEnMonth = function getEnMonth(month) {
+  switch (month) {
+    case 1:
+      month = "Jan";
+      break;
+    case 2:
+      month = "Feb";
+      break;
+    case 3:
+      month = "Mar";
+      break;
+    case 4:
+      month = "Apr";
+      break;
+    case 5:
+      month = "May";
+      break;
+    case 6:
+      month = "Jun";
+      break;
+    case 7:
+      month = "Jul";
+      break;
+    case 8:
+      month = "Aug";
+      break;
+    case 9:
+      month = "Sep";
+      break;
+    case 10:
+      month = "Oct";
+      break;
+    case 11:
+      month = "Nov";
+      break;
+    case 12:
+      month = "Dec";
+      break;
+  }
+  return month
+
+}
+
 module.exports = {
   formatTime: formatTime,
   formatTimeYMD: formatTimeYMD,
@@ -112,5 +155,6 @@ module.exports = {
   formatTimeM: formatTimeM,
   formatTimeD: formatTimeD,
   formatTimeDate: formatTimeDate,
-  formatTimeThree: formatTimeThree
+  formatTimeThree: formatTimeThree,
+  getEnMonth: getEnMonth
 }

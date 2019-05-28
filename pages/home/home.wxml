@@ -12,9 +12,9 @@
   </view>
 
   <!-- 2.0 咨询讯息块 -->
-  <swiper class='swiper'>
+  <swiper class='swiper' bindanimationfinish="swiperChange">
 
-    <swiper-item wx:for="{{messageList}}" wx:key="this" data-date="{{item.date}}">
+    <swiper-item wx:for="{{messageList}}" animation="{{animation}}" wx:key="this"  item-id="{{index}}">
       <view class='message'>
         <image mode='aspectFill' src="{{item.banner}}" class='message-image' />
         <text class='image-form'>{{item.formType}} | {{item.bannerAuthor}}</text>
