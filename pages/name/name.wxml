@@ -1,0 +1,17 @@
+<!--pages/name/name.wxml-->
+<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+
+
+<view class='wrap' style='margin-top: {{height}}px'>
+  <form bindsubmit="submitForm">
+
+    <view wx:for="{{[1,2,3,4,5,6]}}" wx:key="{{index}}" class="section" style='z-index: 12'>
+      <view class='{{index<=1 ? "must" : ""}} tag'>*</view>
+      <view class="section_title">姓名{{index+1}} </view>
+      <input class="section_input" bindinput="inputValue"  data-name="{{index}}" name="input" maxlength='3' placeholder-class="placeholderStyle" placeholder="请输入姓名(2~3个字)" />
+    </view>
+
+    <button class='btn-submit' form-type='submit'> 提交 </button>
+
+  </form>
+</view>

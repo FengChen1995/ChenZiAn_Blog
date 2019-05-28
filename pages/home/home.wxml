@@ -1,7 +1,31 @@
-<!--pages/home/home.wxml-->
-<nav-bar navbar-data='{{nvabarData}}'></nav-bar>
+<!--pages/blog/blog.wxml-->
+<view class='wrap' style='padding-top:{{height+90}}rpx'>
+  <!-- 1.0 顶部导航栏 -->
+  <view class='top-wrap' style='height:{{height+90}}rpx'>
+    <view class='wrap-header'>
+      <view class='today-date'>
+        <text class='date'>{{date}}</text>
+        <text class='month-year'>{{month}}.{{year}}</text>
+      </view>
+      <view class='wrap-title'>By ChenZiAn</view>
+    </view>
+  </view>
 
-<view class='home-page' style='margin-top: {{height}}px'>
-  home page
+  <!-- 2.0 咨询讯息块 -->
+  <swiper class='swiper'>
+
+    <swiper-item wx:for="{{messageList}}" wx:key="this" data-date="{{item.date}}">
+      <view class='message'>
+        <image mode='aspectFill' src="{{item.banner}}" class='message-image' />
+        <text class='image-form'>{{item.formType}} | {{item.bannerAuthor}}</text>
+        <view class='message-con'>
+          <text class='message-text'>{{item.messageCon}}</text>
+        </view>
+        <text class='author'>{{item.messageAuthor}}</text>
+      </view>
+    </swiper-item>
+
+  </swiper>
+
+
 </view>
-

@@ -1,0 +1,50 @@
+/* pages/name/name.wxss */
+page {
+  height: 100%;
+}
+
+/* 通用必填标签 */
+.tag {
+  padding-left: 20rpx;
+  font-size: 32rpx;
+  color:rgb(255, 255, 255);
+}
+.must {
+  color: #EA0909;
+}
+
+/* 通用占位符样式 */
+.placeholderStyle {
+  font-size: 28rpx;
+  color: #999999;
+  font-weight: normal;
+}
+
+
+/* 通用表单验证单元格 */
+
+.section {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 90rpx;
+  color: #1A1A1A;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #F6F6F7;
+  font-family:PingFang-SC-Medium;
+  font-weight:500;
+  flex-wrap: wrap;
+  line-height: 90rpx;
+}
+
+.section_title {
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+
+.section_input {
+  flex: 1;
+  font-size: 32rpx;
+  z-index: 10;
+}

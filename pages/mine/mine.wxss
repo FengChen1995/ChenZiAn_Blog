@@ -1,0 +1,39 @@
+/* pages/mine/mine.wxss */
+page {
+  height: 100%;
+}
+.wrap {
+  height: 100%;
+  background-color: rgb(237, 237, 237)
+}
+
+/* 头部导航栏 */
+.top-wrap {
+  background-color: #373737;
+  z-index: 99998;  
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.wrap-header {
+  height: 80rpx;
+  background-color: #373737;
+  width: 100%;
+}
+
+
+
+/* 临时按钮 */
+.temporary {
+  position: absolute;
+  left: 200rpx;
+  top: 200rpx;
+  border: 1px solid #373737;
+  padding: 10rpx 20rpx;
+  border-radius: 40rpx;
+  font-size: 24rpx;
+}

@@ -1,0 +1,11 @@
+<!--pages/mine/mine.wxml-->
+<view class='wrap'>
+  <!-- 1.0 顶部导航栏 -->
+  <view class='top-wrap' style='height:{{height+90}}rpx'>
+    <view class='wrap-header'>
+    </view>
+  </view>
+
+  <!-- 工具icon栏目 -->
+  <view class='temporary' bindtap='goToName'> 姓名排列 </view>
+</view>
