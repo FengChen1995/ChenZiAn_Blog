@@ -4,7 +4,7 @@ page {
 }
 .wrap {
   height: 100%;
-  background-color: rgb(237, 237, 237)
+  background-color: rgb(240, 239, 245);
 }
 
 /* 头部导航栏 */
@@ -23,6 +23,9 @@ page {
   height: 80rpx;
   background-color: #373737;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 
@@ -31,9 +34,41 @@ page {
 .temporary {
   position: absolute;
   left: 200rpx;
-  top: 200rpx;
+  bottom: 200rpx;
   border: 1px solid #373737;
   padding: 10rpx 20rpx;
   border-radius: 40rpx;
   font-size: 24rpx;
+}
+
+/* 顶部用户名 */
+.userName {
+  width: 100%;
+  color: #fff;
+  font-size: 26rpx;
+  line-height: 80rpx;
+  height: 80rpx;
+  text-align: center;
+}
+
+/* 用户信息框 */
+.user-wrap {
+  height: 500rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #F6F6F7;
+  border-top: 1px solid #F6F6F7;
+}
+
+/* 用户工具列表 */
+.tool-wrap {
+  border-top: 1px solid #F6F6F7;
+  margin-top: 20rpx;
+}
+.section {
+  height: 70rpx;
+  border-bottom: 1px solid #F6F6F7;
+}
+.section-wrap {
+  height: 70rpx;
+  background-color: #fff
 }

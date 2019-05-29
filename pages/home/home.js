@@ -13,6 +13,14 @@ Page({
     date: null,
     messageList:[
       {
+        banner: "http://ps07w6ria.bkt.clouddn.com/step1.jpg?imageView2/0/w/750",
+        formType: "摄影",
+        bannerAuthor: "まずは",
+        messageCon: "现代人的崩溃是一种默不作声的崩溃。看起来很正常，会说笑、会打闹、会社交，表面平静，实际上心里的糟心事已经积累到一定程度了。不会摔门砸东西，不会流眼泪或歇斯底里。但可能某一秒突然就积累到极致了，也不说话，也不真的崩溃，也不太想活，也不敢去死。",
+        messageAuthor: "ChenZiAn",
+        date: "2019/05/29"
+      },
+      {
         banner: "http://ps07w6ria.bkt.clouddn.com/pexels-photo-927493.jpeg?imageView2/0/w/750",
         formType: "摄影",
         bannerAuthor: "Arnie Chou",

@@ -7,13 +7,16 @@ Page({
    */
   data: {
     height: app.globalData.height * 2,
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    userInfo: [], // 用户信息
+    impower: false, // 授权与否
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    let that = this 
   },
 
   /**
@@ -64,11 +67,38 @@ Page({
   onShareAppMessage: function () {
 
   },
+  // 查看授权
+  // checkAuthorization: function (e) {
+  //   let that = this
+  //   wx.getSetting({
+  //     success(res) {
+  //       console.log(res)
+  //       if (res.authSetting['scope.userInfo']) {
+  //         // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+  //         wx.getUserInfo({
+  //           success: function (res) {
+  //             that.setData({
+  //               userInfo: res.userInfo
+  //             })
+  //           }
+  //         })
+  //       } else {
+  //         console.log("没有授权")
+  //         that.setData({
+  //           impower: false,
+  //         })
+  //       }
+  //     },
+  //   })
+  // },
 
   // 前往姓名排列工具
   goToName: function (e) {
     wx.navigateTo({
       url: '/pages/name/name',
     })
+  },
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
   }
 })

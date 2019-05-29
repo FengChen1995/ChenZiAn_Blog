@@ -3,9 +3,44 @@
   <!-- 1.0 顶部导航栏 -->
   <view class='top-wrap' style='height:{{height+90}}rpx'>
     <view class='wrap-header'>
+      <view class='userName'>立志减肥的Bunana</view>
     </view>
   </view>
 
+  <!-- 2.0 用户登陆信息 -->
+  <view class='user-wrap'></view>
+
+
+  <!-- 3.0 用户功能栏目 -->
+  <view class='tool-wrap'>
+    <swiper class='section'>
+      <swiper-item >
+        <view class='section-wrap'></view>
+      </swiper-item>
+      <swiper-item >
+        <view class='section-wrap' style='background-color:red'></view>
+      </swiper-item>
+      <swiper-item >
+        <view class='section-wrap' style='background-color:#373737'></view>
+      </swiper-item>
+      <swiper-item >
+        <view class='section-wrap'  style='background-color:gold'></view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+
+
   <!-- 工具icon栏目 -->
-  <view class='temporary' bindtap='goToName'> 姓名排列 </view>
+  <view class='temporary' bindtap='goToName'>姓名排列</view>
+
+  <!-- 登陆授权提示文本 -->
+  <view class='userInfo' hidden='{{true}}'>
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+    <view wx:else>请升级微信版本</view>
+  </view>
+
+
+
+
 </view>
