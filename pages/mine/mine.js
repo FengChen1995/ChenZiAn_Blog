@@ -91,14 +91,21 @@ Page({
   //     },
   //   })
   // },
+  bindGetUserInfo(e) {
+    console.log(e.detail.userInfo)
+  },
 
+  
   // 前往姓名排列工具
   goToName: function (e) {
     wx.navigateTo({
       url: '/pages/name/name',
     })
   },
-  bindGetUserInfo(e) {
-    console.log(e.detail.userInfo)
+
+
+  // 修改签名弹窗
+  alterSignature: function (e) {
+    console.log("修改签名")
   }
 })

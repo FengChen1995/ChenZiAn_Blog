@@ -13,6 +13,14 @@ Page({
     date: null,
     messageList:[
       {
+        banner: "http://ps07w6ria.bkt.clouddn.com/icy-summit-of-a-mountain-on-a-frosty-night.jpg?imageView2/0/w/750",
+        formType: "摄影",
+        bannerAuthor: "TYLER LASTOVICH",
+        messageCon: "你的心也许会破碎，但人们却依旧会像从前一样生活。",
+        messageAuthor: "马克 奥勒留",
+        date: "2019/05/30"
+      },
+      {
         banner: "http://ps07w6ria.bkt.clouddn.com/step1.jpg?imageView2/0/w/750",
         formType: "摄影",
         bannerAuthor: "まずは",

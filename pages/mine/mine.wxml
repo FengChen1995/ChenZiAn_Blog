@@ -1,38 +1,88 @@
 <!--pages/mine/mine.wxml-->
-<view class='wrap'>
+<view class='wrap' >
   <!-- 1.0 顶部导航栏 -->
   <view class='top-wrap' style='height:{{height+90}}rpx'>
     <view class='wrap-header'>
-      <view class='userName'>立志减肥的Bunana</view>
     </view>
   </view>
 
   <!-- 2.0 用户登陆信息 -->
-  <view class='user-wrap'></view>
-
-
-  <!-- 3.0 用户功能栏目 -->
-  <view class='tool-wrap'>
-    <swiper class='section'>
-      <swiper-item >
-        <view class='section-wrap'></view>
-      </swiper-item>
-      <swiper-item >
-        <view class='section-wrap' style='background-color:red'></view>
-      </swiper-item>
-      <swiper-item >
-        <view class='section-wrap' style='background-color:#373737'></view>
-      </swiper-item>
-      <swiper-item >
-        <view class='section-wrap'  style='background-color:gold'></view>
-      </swiper-item>
-    </swiper>
+  <view class='user-wrap' style='height:{{height+480}}rpx'>
+    <image class='user-photo-bottom' mode='center' src='http://ps07w6ria.bkt.clouddn.com/medium_zUWRPWQkKYIbkQM_BLBMH1miIdjHHB5v8m-nGGYMdbI.jpg?imageView2/0/w/500'></image>
+    <view class='user-card'>
+      <view class='user-photo'>
+        <image mode='aspectFill' src='http://ps07w6ria.bkt.clouddn.com/medium_zUWRPWQkKYIbkQM_BLBMH1miIdjHHB5v8m-nGGYMdbI.jpg?imageView2/0/w/200'></image>
+      </view>
+      <view class='user-name'>立志减肥的Bunana</view>
+      <view class='user-signature' bindtap='alterSignature'>格物致理,明心见性,知行合一</view>
+    </view>
   </view>
 
 
+  <!-- 3.0 用户收藏相关 -->
+  <view class='user-collective'>
+    <view class='user-collective-sub'>
+      <image mode='aspectFit' src='../../images/icon/icon_message.png' />
+      <text>留言</text>
+    </view>
+    <view class='user-collective-sub'>
+      <image  mode='aspectFit'  src='../../images/icon/icon_collect.png' />
+      <text>收藏</text>
+    </view>
+    <view class='user-collective-sub'>
+      <image  mode='aspectFit'  src='../../images/icon/icon_history.png' />
+      <text>历史</text>
+    </view>
+  </view>
+
+  <!-- 4.0 用户工具 -->
+  <view class='user-tools'>
+    <view class='user-tools-sub tools-shop'>
+      <view >造物阁 </view>
+      <view class='section_right_arrows'></view>
+    </view>
+    <view class='lines'></view>
+    <view class='user-tools-sub '>
+      <swiper class='user-collect-tools'>
+        <swiper-item class="user-collect-tools-sub">
+          <text>我的工具</text>
+        </swiper-item>
+        <swiper-item class="user-collect-tools-sub" >
+          <view class='user-collect-tools-btn' bindtap='goToName'>姓名排列</view>
+          <view class='user-collect-tools-btn' bindtap='goToName'>姓名排列</view>
+          <view class='user-collect-tools-btn' bindtap='goToName'>姓名排列</view>
+        </swiper-item>
+        <swiper-item class="user-collect-tools-sub" >
+          <view class='user-collect-tools-btn' bindtap='goToName'>姓名排列</view>
+        </swiper-item>
+        <swiper-item class="user-collect-tools-sub" >
+          <view class='user-collect-tools-btn' bindtap='goToName'>姓名排列</view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+
+  <!-- 5.0 我的相关 -->
+  <view class='author-wrap'>
+    <view class='author-wrap-sub'>联系作者
+      <view class='section_right_arrows'></view>
+    </view>
+    <view class='lines'></view>
+    <view class='author-wrap-sub'>意见反馈
+      <view class='section_right_arrows'></view>
+    </view>
+    <view class='lines'></view>
+    <view class='author-wrap-sub'>关于陈子安
+      <view class='section_right_arrows'></view>
+    </view>
+    <view class='lines'></view>
+    <view class='author-wrap-sub'>打赏支持
+      <view class='section_right_arrows'></view>
+    </view>
+  </view>
 
   <!-- 工具icon栏目 -->
-  <view class='temporary' bindtap='goToName'>姓名排列</view>
+
 
   <!-- 登陆授权提示文本 -->
   <view class='userInfo' hidden='{{true}}'>

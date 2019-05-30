@@ -4,12 +4,13 @@ page {
 }
 .wrap {
   height: 100%;
-  background-color: rgb(240, 239, 245);
+  background-color: #fff;
+  overflow: hidden;
 }
 
 /* 头部导航栏 */
 .top-wrap {
-  background-color: #373737;
+  /* background-color: #373737; */
   z-index: 99998;  
   position: fixed;
   width: 100%;
@@ -21,7 +22,7 @@ page {
 
 .wrap-header {
   height: 80rpx;
-  background-color: #373737;
+  /* background-color: #373737; */
   width: 100%;
   display: flex;
   justify-content: flex-start;
@@ -30,45 +31,167 @@ page {
 
 
 
-/* 临时按钮 */
-.temporary {
+
+
+
+/* 用户信息框 */
+.user-wrap {
+  position: relative;
+  left: -20%;
+	width: 140%;
+  border-radius: 0 0 80% 80%;
+	overflow: hidden;  
+}
+.user-photo-bottom{
+  width: 110%;
+  height: 110%;
+	overflow: hidden;
+  filter: blur(4px) brightness(50%);
+  transform: scale(1.2);
+  z-index: 10
+}
+.user-card {
   position: absolute;
-  left: 200rpx;
-  bottom: 200rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+  bottom: 0rpx;
+  width: 500rpx;
+  height: 360rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-photo {
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user-photo image {
+  width: 100%;
+  height: 100%;
+}
+.user-name {
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #F6F6F7;
+}
+.user-signature {
+  width: 100%;
+  text-align: center;
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #fff;
+  overflow:hidden;
+  text-overflow:ellipsis; 
+  white-space:nowrap;
+}
+
+/* 用户收藏相关 */
+.user-collective {
+  padding: 40rpx;
+  height: 100rpx;
+  background-color: #FFF;
+  border-bottom: 20rpx solid #F6F6F7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.user-collective-sub {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  text-align: center;
+  font-size: 26rpx;
+}
+.user-collective-sub image {
+  width: 100%;
+}
+.user-collective-sub:nth-child(2) {
+  border-left: 1px dashed #373737;
+  border-right: 1px dashed #373737;
+}
+
+
+/* 用户工具 */
+.user-tools {
+  border-bottom: 20rpx solid #F6F6F7;
+}
+.user-tools-sub {
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  position: relative;
+}
+.tools-shop {
+  padding: 0 30rpx;
+}
+.user-collect-tools {
+  height: 100%;
+  width: 100%;
+}
+.user-collect-tools-sub {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.user-collect-tools-sub:first-child {
+  justify-content: flex-start;
+}
+.user-collect-tools-sub:first-child text {
+  margin-left: 30rpx;
+  font-size: 32rpx;
+}
+.user-collect-tools-btn {
+  height: 30rpx;
+  line-height: 30rpx;
+  display: inline-block;
   border: 1px solid #373737;
+  margin: 0 50rpx;
   padding: 10rpx 20rpx;
   border-radius: 40rpx;
   font-size: 24rpx;
 }
 
-/* 顶部用户名 */
-.userName {
-  width: 100%;
-  color: #fff;
-  font-size: 26rpx;
-  line-height: 80rpx;
+
+/* 关于作者 */
+.author-wrap{
+
+}
+.author-wrap-sub {
   height: 80rpx;
-  text-align: center;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  padding: 0 30rpx;
+  position: relative;
 }
 
-/* 用户信息框 */
-.user-wrap {
-  height: 500rpx;
-  background-color: #fff;
-  border-bottom: 1px solid #F6F6F7;
-  border-top: 1px solid #F6F6F7;
-}
 
-/* 用户工具列表 */
-.tool-wrap {
+
+
+/* 线条 */
+.lines {
+  margin:  0 20rpx;
   border-top: 1px solid #F6F6F7;
-  margin-top: 20rpx;
 }
-.section {
-  height: 70rpx;
-  border-bottom: 1px solid #F6F6F7;
-}
-.section-wrap {
-  height: 70rpx;
-  background-color: #fff
+/* 右箭头 */
+.section_right_arrows {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 1px 1px 0 0;
+  border-color: #CCCCCC;
+  border-style: solid;
+  -webkit-transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  transform: matrix(0.71, 0.71, -.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -4px;
+  right: 24rpx;
 }
