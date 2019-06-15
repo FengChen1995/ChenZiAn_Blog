@@ -125,7 +125,7 @@ page {
 .user-tools-sub {
   height: 80rpx;
   line-height: 80rpx;
-  font-size: 32rpx;
+  font-size: 28rpx;
   position: relative;
 }
 .tools-shop {
